@@ -21,5 +21,5 @@ final class MoviePresenter: Presenter {
             models.append(MovieViewModel(movie))
         }
         viewController.showMovies(models)
-    }s
+    }
 }
