@@ -9,4 +9,5 @@ import Foundation
 
 protocol Interactor {
     func fetchMoviesList()
+    func setFavoriteMovie(id: Int, isFavorite: Bool)
 }

@@ -8,14 +8,19 @@
 import UIKit
 
 struct MovieViewModel {
+    var movieId: Int
     var name: String
+    var description: String
     var artworkThumb: UIImage?
     var artwork: UIImage?
     var price: String
     var hdPrice: String
     var genre: String
+    var isFavorite: Bool
     
     init(_ movie: Movie) {
+        movieId = movie.trackId ?? movie.collectionId ?? 0
+        
         switch movie.wrapperType {
         case .track:
             name = movie.trackName ?? ""
@@ -23,15 +28,15 @@ struct MovieViewModel {
             price = "\(movie.currency) \(movie.trackPrice ?? 0.00)"
             hdPrice = "\(movie.currency) \(movie.trackHdPrice ?? 0.00)"
             
-            genre = movie.primaryGenreName
-            
         case .audioBook:
             name = movie.collectionName ?? ""
             
             price = "\(movie.currency) \(movie.collectionPrice ?? 0.00)"
             hdPrice = "\(movie.currency) \(movie.collectionHdPrice ?? 0.00)"
-            
-            genre = movie.primaryGenreName
         }
+        
+        description = movie.longDescription ?? ""
+        genre = movie.primaryGenreName
+        isFavorite = movie.isFavorite
     }
 }

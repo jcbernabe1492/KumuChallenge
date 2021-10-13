@@ -13,6 +13,8 @@ class MoviesViewController: UIViewController {
     
     private var movies: [MovieViewModel] = []
     
+    private lazy var interactor = MovieInteractor(presenter: MoviePresenter(view: self))
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -21,8 +23,7 @@ class MoviesViewController: UIViewController {
         super.viewWillAppear(animated)
         
         if movies.count == 0 {
-            let si = ServiceInteractor(presenter: MoviePresenter(view: self))
-            si.fetchMoviesList()
+            interactor.fetchMoviesList()
         }
     }
 }
@@ -48,8 +49,22 @@ extension MoviesViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "movieCell", for: indexPath) as! MovieCell
+        
+        cell.selectionStyle = .none
+        
         cell.setMovieData(movies[indexPath.row])
+        cell.favoriteAction = { id, isFavorite in
+            print("\(id)-\(isFavorite)")
+            self.interactor.setFavoriteMovie(id: id, isFavorite: isFavorite)
+        }
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detailsVc = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(identifier: "MovieDetailsViewController") { coder -> MovieDetailsViewController? in
+            MovieDetailsViewController(coder: coder, model: self.movies[indexPath.row])
+        }
+        navigationController?.pushViewController(detailsVc, animated: true)
     }
 }
 

@@ -9,6 +9,10 @@ import UIKit
 
 class MovieCell: UITableViewCell {
     
+    // MARK:
+    
+    var favoriteAction: ((Int, Bool)->())? = nil
+    
     // MARK: IBOutlets
     
     @IBOutlet weak var thumbnail: UIImageView!
@@ -18,13 +22,18 @@ class MovieCell: UITableViewCell {
     @IBOutlet weak var genreLbl: UILabel!
     @IBOutlet weak var favoriteBtn: UIButton!
 
+    private var movieId: Int = 0
+    
     func setMovieData(_ movie: MovieViewModel) {
+        movieId = movie.movieId
         nameLbl.text = movie.name
         priceLbl.text = "\(movie.price)"
         hdPriceLbl.text = "\(movie.hdPrice)"
+        favoriteBtn.isSelected = movie.isFavorite
     }
     
     @IBAction func favoriteTapped(_ button: UIButton) {
         button.isSelected = !button.isSelected
+        favoriteAction?(movieId, button.isSelected)
     }
 }
