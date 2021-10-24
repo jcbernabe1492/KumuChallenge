@@ -8,10 +8,13 @@
 import Foundation
 import CoreData
 
+/// Worker class that will handle all core data related processes.
 final class CoreDataWorker {
     
+    /// Singleton instance.
     static let shared = CoreDataWorker()
     
+    /// Reference to persistent container.
     private lazy var persistentContainer: NSPersistentContainer = {
         let container = NSPersistentContainer(name: "KumuChallenge")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
@@ -23,16 +26,21 @@ final class CoreDataWorker {
         return container
     }()
     
+    /// Reference to *NSManagedObjectContext.*
     private lazy var context = persistentContainer.viewContext
     
+    /// Reference to movie entity.
     private var movieEntity: NSEntityDescription? {
         return NSEntityDescription.entity(forEntityName: movieEntityName, in: context)
     }
     
+    /// Name constant of move entity.
     private let movieEntityName = "MovieEntity"
     
     // MARK: - Manage Context
     
+    /// Save managed object context to apply changes within persistent store.
+    /// - Parameter completion: Result closure that tells if saving succeeds or not.
     func saveContext(completion: ResultClosure? = nil) {
         let context = persistentContainer.viewContext
         if context.hasChanges {
@@ -49,6 +57,10 @@ final class CoreDataWorker {
     
     // MARK: - CRUD Functions
     
+    /// Save a movie to persistent store.
+    /// - Parameters:
+    ///   - movie: Movie model that contains details to be saved.
+    ///   - completion: Result closure that tells if saving succeeds or not.
     func saveMovie(_ movie: Movie, completion: ResultClosure? = nil) {
         guard let _movieEntity = movieEntity,
               let trackId = movie.trackId else {
@@ -72,9 +84,12 @@ final class CoreDataWorker {
         }
     }
     
-    func fetchMovies() -> [Movie] {
+    /// Fetch all movies saved within the persistent store.
+    /// - Parameter isFavorites: If fetching should get favorite movies list or all movies list.
+    /// - Returns: Array of movies, with each item containing details of each entry in the persistent store.
+    func fetchMovies(isFavorites: Bool = false) -> [Movie] {
         do {
-            let fetchResults = try context.fetch(createMovieFetchRequest())
+            let fetchResults = try context.fetch(createMovieFetchRequest(isFavorites: isFavorites))
             if fetchResults.count > 0, let results = fetchResults as? [NSManagedObject] {
                 var movies: [Movie] = []
                 
@@ -116,6 +131,10 @@ final class CoreDataWorker {
         return []
     }
     
+    /// Update a movie to set if it's the users favorite or not.
+    /// - Parameters:
+    ///   - trackId: Track id of the movie to be updated.
+    ///   - isFavorite: If movie is favorite or not.
     func updateFavoriteMovie(trackId: Int, isFavorite: Bool) {
         do {
             let fetchResult = try context.fetch(createTrackIdFetchRequest(trackId))
@@ -131,6 +150,11 @@ final class CoreDataWorker {
     
     // MARK: - Helper Functions
     
+    /// Set movie values to an *NSManagedObject*.
+    /// - Parameters:
+    ///   - movie: Movie model that contains details to be saved.
+    ///   - toManagedObj: *NSManagedObject* instance where movie details will be set.
+    ///   - isUpdate: If setting of values is requested as part of inserting new entry or just updating an existing one.
     private func setMovieValues(_ movie: Movie, toManagedObj: NSManagedObject, isUpdate: Bool) {
         toManagedObj.setValue(movie.trackName, forKey: Movie.CodingKeys.trackName.rawValue)
         
@@ -158,11 +182,20 @@ final class CoreDataWorker {
         }
     }
     
-    private func createMovieFetchRequest() -> NSFetchRequest<NSFetchRequestResult> {
+    /// Create fetch request for retreiving movie lists.
+    /// - Parameter isFavorites: If data to be requested is for fetching favorite movies or not.
+    /// - Returns: *NSFetchRequest* instance to be used when trying to get data from the persistent store.
+    private func createMovieFetchRequest(isFavorites: Bool) -> NSFetchRequest<NSFetchRequestResult> {
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: movieEntityName)
+        if isFavorites {
+            fetchRequest.predicate = NSPredicate(format: "isFavorite == 1")
+        }
         return fetchRequest
     }
     
+    /// Create fetch request for getting an entry with a specific track id.
+    /// - Parameter trackId: Track id of entry to be fetched.
+    /// - Returns: *NSFetchRequest* instance to be used when trying to get data from the persistent store.
     private func createTrackIdFetchRequest(_ trackId: Int) -> NSFetchRequest<NSFetchRequestResult> {
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: movieEntityName)
         fetchRequest.predicate = NSPredicate(format: "\(Movie.CodingKeys.trackId.rawValue) == %i", trackId)

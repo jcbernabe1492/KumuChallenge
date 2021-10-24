@@ -19,7 +19,7 @@ final class MovieInteractor: Interactor {
         let dispatchGrp = DispatchGroup()
         let dispatchQueue = DispatchQueue(label: "PersistingMoviesQueue")
         
-        ServiceWorker.request(ofType: MovieList.self,
+        RequestWorker.request(ofType: MovieList.self,
                               baseURL: "https://itunes.apple.com/search?term=star&amp;country=au&amp;media=movie&amp;all",
                               endpoint: "") { result in
             switch result {
@@ -48,6 +48,11 @@ final class MovieInteractor: Interactor {
             let movies = CoreDataWorker.shared.fetchMovies()
             self.moviePresenter.processMovies(movies)
         }
+    }
+    
+    func fetchFavoriteMoviesList() {
+        let faveMovies = CoreDataWorker.shared.fetchMovies(isFavorites: true)
+        self.moviePresenter.processMovies(faveMovies)
     }
     
     func setFavoriteMovie(id: Int, isFavorite: Bool) {

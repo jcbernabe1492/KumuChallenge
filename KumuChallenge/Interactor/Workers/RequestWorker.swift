@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 enum RequestError: Error {
     case invalidRequest
@@ -15,11 +16,10 @@ enum RequestError: Error {
     case decodingError(error: Error)
 }
 
-struct ServiceWorker {
-    
-    private let urlSession: URLSession
+struct RequestWorker {
     
     typealias objectResult<T> = (Result<T, Error>) -> Void
+    typealias dataResult = (Result<Data, Error>) -> Void
     
     static func request<T: Decodable>(ofType: T.Type,
                                       baseURL: String,
@@ -29,7 +29,7 @@ struct ServiceWorker {
                                       query: [String: String]? = nil,
                                       body: [String: Any]? = nil,
                                       completion: @escaping objectResult<T>) {
-        guard let urlRequest = ServiceWorker.generateURLRequest(baseURL: baseURL,
+        guard let urlRequest = RequestUtils.generateURLRequest(baseURL: baseURL,
                                                                 endpoint: endpoint,
                                                                 method: method,
                                                                 headers: headers,
@@ -49,10 +49,10 @@ struct ServiceWorker {
                 return
             }
             
-            if 200 ... 299 ~= _response.statusCode {
+            if RequestUtils.isSuccessfulResponse(code: _response.statusCode) {
                 // Success
                 if let _data = data,
-                   let cleanedData = ServiceWorker.clean(data: _data) {
+                   let cleanedData = RequestWorker.clean(data: _data) {
                     do {
                         let decodedObject: T = try JSONDecoder().decode(T.self, from: cleanedData)
                         completion(.success(decodedObject))
@@ -68,47 +68,6 @@ struct ServiceWorker {
             }
             
         }.resume()
-    }
-    
-    private static func generateURLRequest(baseURL: String,
-                                           endpoint: String,
-                                           method: RequestMethods,
-                                           headers: [String: String]? = nil,
-                                           query: [String: String]? = nil,
-                                           body: [String: Any]? = nil) -> URLRequest? {
-        
-        guard var urlComponents = URLComponents(string: baseURL + endpoint) else {
-            return nil
-        }
-        
-        if let _query = query {
-            var queryItems: [URLQueryItem] = []
-            _query.forEach { (key, value) in
-                queryItems.append(URLQueryItem(name: key, value: value))
-            }
-            urlComponents.queryItems = queryItems
-        }
-        
-        var urlRequest = URLRequest(url: urlComponents.url!)
-        
-        urlRequest.httpMethod = method.rawValue
-        
-        if let _headers = headers {
-            _headers.forEach { (key, value) in
-                urlRequest.addValue(value, forHTTPHeaderField: key)
-            }
-        }
-        
-        if let _body = body {
-            do {
-                let jsonData = try JSONSerialization.data(withJSONObject: _body, options: [])
-                urlRequest.httpBody = jsonData
-            } catch let error {
-                dump("\(error)")
-            }
-        }
-        
-        return urlRequest
     }
     
     private static func clean(data: Data) -> Data? {

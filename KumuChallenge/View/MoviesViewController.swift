@@ -12,8 +12,11 @@ class MoviesViewController: UIViewController {
     @IBOutlet weak var moviesTable: UITableView!
     
     private var movies: [MovieViewModel] = []
+    private var favoriteMovies: [MovieViewModel] = []
     
     private lazy var interactor = MovieInteractor(presenter: MoviePresenter(view: self))
+    
+    private var isFavoritesShowing = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +28,19 @@ class MoviesViewController: UIViewController {
         if movies.count == 0 {
             interactor.fetchMoviesList()
         }
+    }
+    
+    @IBAction func favoritesTapped(_ sender: UIBarButtonItem) {
+        if isFavoritesShowing {
+            // Hide favorites
+            interactor.fetchMoviesList()
+            sender.title = "Show Faves"
+        } else {
+            // Show favorites
+            interactor.fetchFavoriteMoviesList()
+            sender.title = "Hide Faves"
+        }
+        isFavoritesShowing = !isFavoritesShowing
     }
 }
 
@@ -45,6 +61,10 @@ extension MoviesViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return movies.count
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

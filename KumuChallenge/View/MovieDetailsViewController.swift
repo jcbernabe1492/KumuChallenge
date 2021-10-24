@@ -7,6 +7,7 @@
 
 import UIKit
 
+/// Class to show full movie details.
 class MovieDetailsViewController: UIViewController {
     
     private let movieModel: MovieViewModel
@@ -42,6 +43,7 @@ class MovieDetailsViewController: UIViewController {
         priceLbl.text = "\(movieModel.price)"
         hdPriceLbl.text = "\(movieModel.hdPrice)"
         descriptionLbl.text = movieModel.description
+        updateFavoriteButtonState()
     }
     
     private func setupFavoriteButton() {
@@ -51,6 +53,10 @@ class MovieDetailsViewController: UIViewController {
     }
     
     @objc private func favoriteTapped() {
+        updateFavoriteButtonState()
+    }
+    
+    private func updateFavoriteButtonState() {
         if movieModel.isFavorite {
             favoriteBarButton.image = UIImage(systemName: "star")
         } else {

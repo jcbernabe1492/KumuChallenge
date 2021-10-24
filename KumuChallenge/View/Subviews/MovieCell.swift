@@ -30,6 +30,17 @@ class MovieCell: UITableViewCell {
         priceLbl.text = "\(movie.price)"
         hdPriceLbl.text = "\(movie.hdPrice)"
         favoriteBtn.isSelected = movie.isFavorite
+        if let url = movie.artworkURL {
+            ImageCache.shared.loadImage(from: url) { result in
+                switch result {
+                case .success(let image):
+                    self.thumbnail.image = image
+                    
+                case .failure(_):
+                    break
+                }
+            }
+        }
     }
     
     @IBAction func favoriteTapped(_ button: UIButton) {

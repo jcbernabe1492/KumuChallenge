@@ -11,6 +11,7 @@ struct MovieViewModel {
     var movieId: Int
     var name: String
     var description: String
+    var artworkURL: String?
     var artworkThumb: UIImage?
     var artwork: UIImage?
     var price: String
@@ -38,5 +39,7 @@ struct MovieViewModel {
         description = movie.longDescription ?? ""
         genre = movie.primaryGenreName
         isFavorite = movie.isFavorite
+        
+        artworkURL = movie.artworkUrl100
     }
 }
