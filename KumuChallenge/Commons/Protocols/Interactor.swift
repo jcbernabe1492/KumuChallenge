@@ -7,9 +7,12 @@
 
 import Foundation
 
-/// Interactor 
+/// Interactor
 protocol Interactor {
-    func fetchMoviesList()
-    func fetchFavoriteMoviesList()
-    func setFavoriteMovie(id: Int, isFavorite: Bool)
+    
+    /// Presenter instance that will receive data from interactor for processing.
+    var presenter: Presenter { get set }
+    
+    /// Fetch movies agnostic of source.
+    func fetchMovies()
 }

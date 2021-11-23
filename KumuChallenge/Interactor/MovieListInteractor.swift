@@ -7,15 +7,15 @@
 
 import Foundation
 
-final class MovieInteractor: Interactor {
+final class MovieListInteractor: Interactor {
     
-    private var moviePresenter: Presenter
+    var presenter: Presenter
     
     init(presenter: Presenter) {
-        moviePresenter = presenter
+        self.presenter = presenter
     }
     
-    func fetchMoviesList() {
+    func fetchMovies() {
         let dispatchGrp = DispatchGroup()
         let dispatchQueue = DispatchQueue(label: "PersistingMoviesQueue")
         
@@ -46,16 +46,7 @@ final class MovieInteractor: Interactor {
         
         dispatchGrp.notify(queue: dispatchQueue) {
             let movies = CoreDataWorker.shared.fetchMovies()
-            self.moviePresenter.processMovies(movies)
+            self.presenter.processMovies(movies)
         }
-    }
-    
-    func fetchFavoriteMoviesList() {
-        let faveMovies = CoreDataWorker.shared.fetchMovies(isFavorites: true)
-        self.moviePresenter.processMovies(faveMovies)
-    }
-    
-    func setFavoriteMovie(id: Int, isFavorite: Bool) {
-        CoreDataWorker.shared.updateFavoriteMovie(trackId: id, isFavorite: isFavorite)
     }
 }

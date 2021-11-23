@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4967F833274B3D2700E0A74A /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4967F832274B3D2700E0A74A /* UIView+Constraints.swift */; };
+		4967F835274D3F6600E0A74A /* SearchMovieInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4967F834274D3F6600E0A74A /* SearchMovieInteractor.swift */; };
+		4967F837274D3F7300E0A74A /* FavoriteMovieInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4967F836274D3F7300E0A74A /* FavoriteMovieInteractor.swift */; };
 		496CDADC2715E8920050C0FA /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496CDADB2715E8920050C0FA /* MovieDetailsViewController.swift */; };
 		496CDAE12718718F0050C0FA /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496CDAE02718718F0050C0FA /* ImageCache.swift */; };
 		498179602700C65700F0E774 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4981795F2700C65700F0E774 /* MoviesViewController.swift */; };
-		498179642700C92800F0E774 /* MovieInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498179632700C92800F0E774 /* MovieInteractor.swift */; };
+		498179642700C92800F0E774 /* MovieListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498179632700C92800F0E774 /* MovieListInteractor.swift */; };
 		498179662700C96E00F0E774 /* MoviePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498179652700C96E00F0E774 /* MoviePresenter.swift */; };
 		4981796B2700C98F00F0E774 /* RequestWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4981796A2700C98F00F0E774 /* RequestWorker.swift */; };
 		4981796F2700D1F800F0E774 /* RequestConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4981796E2700D1F800F0E774 /* RequestConstants.swift */; };
@@ -51,10 +54,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4967F832274B3D2700E0A74A /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
+		4967F834274D3F6600E0A74A /* SearchMovieInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMovieInteractor.swift; sourceTree = "<group>"; };
+		4967F836274D3F7300E0A74A /* FavoriteMovieInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteMovieInteractor.swift; sourceTree = "<group>"; };
 		496CDADB2715E8920050C0FA /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
 		496CDAE02718718F0050C0FA /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		4981795F2700C65700F0E774 /* MoviesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
-		498179632700C92800F0E774 /* MovieInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInteractor.swift; sourceTree = "<group>"; };
+		498179632700C92800F0E774 /* MovieListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListInteractor.swift; sourceTree = "<group>"; };
 		498179652700C96E00F0E774 /* MoviePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePresenter.swift; sourceTree = "<group>"; };
 		4981796A2700C98F00F0E774 /* RequestWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestWorker.swift; sourceTree = "<group>"; };
 		4981796E2700D1F800F0E774 /* RequestConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestConstants.swift; sourceTree = "<group>"; };
@@ -108,6 +114,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4967F831274B3CF000E0A74A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4967F832274B3D2700E0A74A /* UIView+Constraints.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		496CDADF271871860050C0FA /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +162,7 @@
 		4981796D2700D1E700F0E774 /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				4967F831274B3CF000E0A74A /* Extensions */,
 				496CDADF271871860050C0FA /* Utilities */,
 				49C8BF4327088F74001C542F /* Constants.swift */,
 				4981797A27024A6200F0E774 /* Protocols */,
@@ -160,6 +175,7 @@
 			children = (
 				4981797327023E0300F0E774 /* MovieList.swift */,
 				498179712701554500F0E774 /* Movie.swift */,
+				4981796E2700D1F800F0E774 /* RequestConstants.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -242,8 +258,9 @@
 			children = (
 				498179702701552000F0E774 /* Models */,
 				498179672700C98100F0E774 /* Workers */,
-				498179632700C92800F0E774 /* MovieInteractor.swift */,
-				4981796E2700D1F800F0E774 /* RequestConstants.swift */,
+				498179632700C92800F0E774 /* MovieListInteractor.swift */,
+				4967F834274D3F6600E0A74A /* SearchMovieInteractor.swift */,
+				4967F836274D3F7300E0A74A /* FavoriteMovieInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -393,11 +410,14 @@
 				49C8BF4227087D44001C542F /* CoreDataWorker.swift in Sources */,
 				498179602700C65700F0E774 /* MoviesViewController.swift in Sources */,
 				49C5E1EA26FE1E2200DE98F7 /* AppDelegate.swift in Sources */,
+				4967F833274B3D2700E0A74A /* UIView+Constraints.swift in Sources */,
 				498179722701554500F0E774 /* Movie.swift in Sources */,
 				4981797427023E0300F0E774 /* MovieList.swift in Sources */,
-				498179642700C92800F0E774 /* MovieInteractor.swift in Sources */,
+				498179642700C92800F0E774 /* MovieListInteractor.swift in Sources */,
 				4981797E27024A9D00F0E774 /* Presenter.swift in Sources */,
 				4981796F2700D1F800F0E774 /* RequestConstants.swift in Sources */,
+				4967F837274D3F7300E0A74A /* FavoriteMovieInteractor.swift in Sources */,
+				4967F835274D3F6600E0A74A /* SearchMovieInteractor.swift in Sources */,
 				496CDAE12718718F0050C0FA /* ImageCache.swift in Sources */,
 				49C5E1F426FE1E2200DE98F7 /* KumuChallenge.xcdatamodeld in Sources */,
 				4981797C27024A9400F0E774 /* Interactor.swift in Sources */,

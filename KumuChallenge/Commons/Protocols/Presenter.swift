@@ -8,5 +8,8 @@
 import Foundation
 
 protocol Presenter {
+    
+    /// Process Movies from Interactor before passing to View.
+    /// - Parameter movies: Array of movies retreived from interactor.
     func processMovies(_ movies: [Movie])
 }
