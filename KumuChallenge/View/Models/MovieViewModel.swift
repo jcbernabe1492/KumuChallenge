@@ -22,18 +22,20 @@ struct MovieViewModel {
     init(_ movie: Movie) {
         movieId = movie.trackId ?? movie.collectionId ?? 0
         
+        let currency = movie.currency.count == 0 ? "USD" : movie.currency
+        
         switch movie.wrapperType {
         case .track:
             name = movie.trackName ?? ""
             
-            price = "\(movie.currency) \(movie.trackPrice ?? 0.00)"
-            hdPrice = "\(movie.currency) \(movie.trackHdPrice ?? 0.00)"
+            price = "\(currency) \(movie.trackPrice ?? 0.00)"
+            hdPrice = "\(currency) \(movie.trackHdPrice ?? 0.00)"
             
         case .audioBook:
             name = movie.collectionName ?? ""
             
-            price = "\(movie.currency) \(movie.collectionPrice ?? 0.00)"
-            hdPrice = "\(movie.currency) \(movie.collectionHdPrice ?? 0.00)"
+            price = "\(currency) \(movie.collectionPrice ?? 0.00)"
+            hdPrice = "\(currency) \(movie.collectionHdPrice ?? 0.00)"
         }
         
         description = movie.longDescription ?? ""

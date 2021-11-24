@@ -6,64 +6,134 @@
 //
 
 import UIKit
+import SnapKit
 
 class MoviesViewController: UIViewController {
-
-    @IBOutlet weak var moviesTable: UITableView!
     
+    /// Reference to movies table.
+    private lazy var moviesTable = UITableView(frame: view.bounds)
+    
+    /// Reference to favorite bar button item.
+    private lazy var favoriteListBarItem = UIBarButtonItem(title: "Show Faves",
+                                                           style: .plain,
+                                                           target: self,
+                                                           action: #selector(favoritesTapped))
+    
+    /// Movies view model list.
     private var movies: [MovieViewModel] = []
-    private var filteredMovies: [MovieViewModel] = []
-    private var favoriteMovies: [MovieViewModel] = []
     
+    /// List of searched movies.
+    ///
+    /// Used a different array of view models for searching to retain original list after exiting search.
+    private var searchedMovies: [MovieViewModel] = []
+    
+    /// Reference to movie presenter.
+    ///
+    /// Presenter processes data before giving it to this view controller.
     private lazy var presenter = MoviePresenter(view: self)
-    private lazy var movieListInteractor = MovieListInteractor(presenter: presenter)
-    private lazy var favoriteMovieInteractor = FavoriteMovieInteractor(presenter: presenter)
-    private lazy var searchMovieInteractor = SearchMovieInteractor(presenter: presenter)
     
+    /// Reference to movie list interactor that fetches list of movies.
+    ///
+    /// Interactor initiates processing of data that will later be received by this view via the presenter.
+    private lazy var movieListInteractor = MovieListInteractor(presenter: presenter)
+    
+    /// Reference to favorite movie interactor that fetches list of favorite movies.
+    ///
+    /// Interactor initiates processing of data that will later be received by this view via the presenter.
+    private lazy var favoriteMovieInteractor = FavoriteMovieInteractor(presenter: presenter)
+    
+    /// Flag if favorites list is currently active or not.
     private var isFavoritesShowing = false
+    
+    /// Flag if search is active or not.
     private var isSearching = false
     
-    let searchController = UISearchController(searchResultsController: nil)
-
+    /// Reference to search controller.
+    private let searchController = UISearchController(searchResultsController: nil)
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .darkContent
+    }
+    
+    // MARK: View Life Cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupSearchController()
+        setupInterface()
         setupKeyboardNotifications()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+        setNeedsStatusBarAppearanceUpdate()
         if movies.count == 0 {
             movieListInteractor.fetchMovies()
         }
     }
     
-    @IBAction func favoritesTapped(_ sender: UIBarButtonItem) {
-        if isFavoritesShowing {
-            // Hide favorites
-            movieListInteractor.fetchMovies()
-            sender.title = "Show Faves"
-        } else {
-            // Show favorites
-            favoriteMovieInteractor.fetchMovies()
-            sender.title = "Hide Faves"
-        }
-        isFavoritesShowing = !isFavoritesShowing
+    // MARK: UI Setup
+    
+    /// Setup user interface.
+    private func setupInterface() {
+        view.backgroundColor = bgColor
+        
+        setupNavigationBar()
+        setupTable()
+        setupSearchController()
     }
     
-    // MARK: Search
+    private func setupNavigationBar() {
+        navigationController?.navigationBar.isTranslucent = false
+        navigationController?.navigationBar.barTintColor = bgColor
+        
+        navigationItem.rightBarButtonItem = favoriteListBarItem
+    }
+    
+    private func setupTable() {
+        view.addSubview(moviesTable)
+        moviesTable.snp.makeConstraints { make in
+            make.leadingMargin.equalTo(view)
+            make.trailingMargin.equalTo(view)
+            make.topMargin.equalTo(view)
+            make.bottomMargin.equalTo(view)
+        }
+        
+        moviesTable.backgroundColor = bgColor
+        moviesTable.delegate = self
+        moviesTable.dataSource = self
+        moviesTable.register(MovieCell.self, forCellReuseIdentifier: "MovieCell")
+        moviesTable.separatorStyle = .none
+        moviesTable.rowHeight = UITableView.automaticDimension
+        moviesTable.estimatedRowHeight = 150
+    }
     
     private func setupSearchController() {
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
         searchController.searchBar.placeholder = "Search Movies"
         searchController.searchBar.delegate = self
+        searchController.searchBar.backgroundImage = UIImage()
+        searchController.searchBar.backgroundColor = bgColor
         
         navigationItem.searchController = searchController
         navigationItem.hidesSearchBarWhenScrolling = false
         
         definesPresentationContext = true
+    }
+    
+    // MARK: Favorites Action
+    
+    @objc func favoritesTapped() {
+        if isFavoritesShowing {
+            // Hide favorites
+            movieListInteractor.fetchMovies()
+            favoriteListBarItem.title = "Show Faves"
+        } else {
+            // Show favorites
+            favoriteMovieInteractor.fetchFavoriteMovies()
+            favoriteListBarItem.title = "Hide Faves"
+        }
+        isFavoritesShowing = !isFavoritesShowing
     }
     
     // MARK: Keyboard
@@ -94,7 +164,12 @@ class MoviesViewController: UIViewController {
 
 extension MoviesViewController: View {
     func showMovies(_ movieModels: [MovieViewModel]) {
-        movies = movieModels
+        if isSearching {
+            searchedMovies = movieModels
+        } else {
+            movies = movieModels
+        }
+        
         DispatchQueue.main.async {
             self.moviesTable.reloadData()
         }
@@ -110,7 +185,7 @@ extension MoviesViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return (isSearching ? filteredMovies : movies).count
+        return (isSearching ? searchedMovies : movies).count
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
@@ -118,11 +193,11 @@ extension MoviesViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "movieCell", for: indexPath) as! MovieCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell", for: indexPath) as! MovieCell
         
         cell.selectionStyle = .none
         
-        cell.setMovieData((isSearching ? filteredMovies : movies)[indexPath.row])
+        cell.setMovieData((isSearching ? searchedMovies : movies)[indexPath.row])
         cell.favoriteAction = { id, isFavorite in
             self.favoriteMovieInteractor.setFavoriteMovie(id: id, isFavorite: isFavorite)
         }
@@ -130,9 +205,7 @@ extension MoviesViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let detailsVc = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(identifier: "MovieDetailsViewController") { coder -> MovieDetailsViewController? in
-            MovieDetailsViewController(coder: coder, model: self.movies[indexPath.row])
-        }
+        let detailsVc = MovieDetailsViewController(model: movies[indexPath.row])
         navigationController?.pushViewController(detailsVc, animated: true)
     }
 }
@@ -153,12 +226,13 @@ extension MoviesViewController: UISearchResultsUpdating, UISearchBarDelegate {
         let strippedString = searchController.searchBar.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         
         if strippedString.count == 0  {
-            filteredMovies = movies
+            searchedMovies = movies
         } else {
-            filteredMovies = movies.filter{ $0.name.localizedCaseInsensitiveContains(strippedString) }
+            // Added delay to give buffer when user is typing slow.
+            DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(500)) {
+                self.movieListInteractor.searchMovies(searchString: strippedString)
+            }
         }
-        
-        moviesTable.reloadData()
     }
 }
    

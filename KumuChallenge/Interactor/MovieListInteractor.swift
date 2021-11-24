@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class MovieListInteractor: Interactor {
+final class MovieListInteractor: MovieFetcher {
     
     var presenter: Presenter
     
@@ -47,6 +47,20 @@ final class MovieListInteractor: Interactor {
         dispatchGrp.notify(queue: dispatchQueue) {
             let movies = CoreDataWorker.shared.fetchMovies()
             self.presenter.processMovies(movies)
+        }
+    }
+    
+    func searchMovies(searchString: String) { 
+        RequestWorker.request(ofType: MovieList.self,
+                              baseURL: "https://itunes.apple.com/search?term=\(searchString)&amp;country=au&amp;media=movie&amp;all",
+                              endpoint: "") { result in
+            switch result {
+            case .success(let movieList):
+                self.presenter.processMovies(movieList.movies)
+                
+            case .failure(let error):
+                dump("error \(error)")
+            }
         }
     }
 }

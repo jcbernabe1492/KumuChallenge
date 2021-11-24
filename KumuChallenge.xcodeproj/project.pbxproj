@@ -3,13 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4967F833274B3D2700E0A74A /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4967F832274B3D2700E0A74A /* UIView+Constraints.swift */; };
-		4967F835274D3F6600E0A74A /* SearchMovieInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4967F834274D3F6600E0A74A /* SearchMovieInteractor.swift */; };
+		3C387084A1F50E487355671D /* Pods_KumuChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 617510196E67424F3405346A /* Pods_KumuChallenge.framework */; };
 		4967F837274D3F7300E0A74A /* FavoriteMovieInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4967F836274D3F7300E0A74A /* FavoriteMovieInteractor.swift */; };
+		4967F839274EBFB600E0A74A /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4967F838274EBFB600E0A74A /* UIColor+Hex.swift */; };
 		496CDADC2715E8920050C0FA /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496CDADB2715E8920050C0FA /* MovieDetailsViewController.swift */; };
 		496CDAE12718718F0050C0FA /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496CDAE02718718F0050C0FA /* ImageCache.swift */; };
 		498179602700C65700F0E774 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4981795F2700C65700F0E774 /* MoviesViewController.swift */; };
@@ -34,6 +34,8 @@
 		49C8BF4227087D44001C542F /* CoreDataWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C8BF4127087D44001C542F /* CoreDataWorker.swift */; };
 		49C8BF4427088F74001C542F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C8BF4327088F74001C542F /* Constants.swift */; };
 		49FF8CA22725DBAB007D545F /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FF8CA12725DBAB007D545F /* Utils.swift */; };
+		9C5C22438B48266090598408 /* Pods_KumuChallenge_KumuChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FB613D3844433F8C968B58B /* Pods_KumuChallenge_KumuChallengeUITests.framework */; };
+		CF1173F19D868714B5A0AEB2 /* Pods_KumuChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B089E0AC5391CE8BF232B9 /* Pods_KumuChallengeTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,9 +56,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4967F832274B3D2700E0A74A /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
-		4967F834274D3F6600E0A74A /* SearchMovieInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMovieInteractor.swift; sourceTree = "<group>"; };
+		01B089E0AC5391CE8BF232B9 /* Pods_KumuChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KumuChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FB613D3844433F8C968B58B /* Pods_KumuChallenge_KumuChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KumuChallenge_KumuChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FFF3E3262FD55617129859C /* Pods-KumuChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KumuChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-KumuChallengeTests/Pods-KumuChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		4967F836274D3F7300E0A74A /* FavoriteMovieInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteMovieInteractor.swift; sourceTree = "<group>"; };
+		4967F838274EBFB600E0A74A /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		496CDADB2715E8920050C0FA /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
 		496CDAE02718718F0050C0FA /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		4981795F2700C65700F0E774 /* MoviesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +91,12 @@
 		49C8BF4127087D44001C542F /* CoreDataWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataWorker.swift; sourceTree = "<group>"; };
 		49C8BF4327088F74001C542F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		49FF8CA12725DBAB007D545F /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		4D3C1435D0125DC346D0759F /* Pods-KumuChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KumuChallenge.debug.xcconfig"; path = "Target Support Files/Pods-KumuChallenge/Pods-KumuChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		617510196E67424F3405346A /* Pods_KumuChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KumuChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C04F482CADBF4A77BF4BD33 /* Pods-KumuChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KumuChallenge.release.xcconfig"; path = "Target Support Files/Pods-KumuChallenge/Pods-KumuChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		89D6D904A5B71A41657C9DE8 /* Pods-KumuChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KumuChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-KumuChallengeTests/Pods-KumuChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		97917EBD1E3F996565D23AF5 /* Pods-KumuChallenge-KumuChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KumuChallenge-KumuChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-KumuChallenge-KumuChallengeUITests/Pods-KumuChallenge-KumuChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B613BF231103F2A843626C9D /* Pods-KumuChallenge-KumuChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KumuChallenge-KumuChallengeUITests.release.xcconfig"; path = "Target Support Files/Pods-KumuChallenge-KumuChallengeUITests/Pods-KumuChallenge-KumuChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C387084A1F50E487355671D /* Pods_KumuChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF1173F19D868714B5A0AEB2 /* Pods_KumuChallengeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,16 +120,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C5C22438B48266090598408 /* Pods_KumuChallenge_KumuChallengeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		196139D9AE5EF5703BEE5D68 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4D3C1435D0125DC346D0759F /* Pods-KumuChallenge.debug.xcconfig */,
+				7C04F482CADBF4A77BF4BD33 /* Pods-KumuChallenge.release.xcconfig */,
+				97917EBD1E3F996565D23AF5 /* Pods-KumuChallenge-KumuChallengeUITests.debug.xcconfig */,
+				B613BF231103F2A843626C9D /* Pods-KumuChallenge-KumuChallengeUITests.release.xcconfig */,
+				89D6D904A5B71A41657C9DE8 /* Pods-KumuChallengeTests.debug.xcconfig */,
+				2FFF3E3262FD55617129859C /* Pods-KumuChallengeTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		4967F831274B3CF000E0A74A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				4967F832274B3D2700E0A74A /* UIView+Constraints.swift */,
+				4967F838274EBFB600E0A74A /* UIColor+Hex.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -205,6 +231,8 @@
 				49C5E20226FE1E2500DE98F7 /* KumuChallengeTests */,
 				49C5E20D26FE1E2500DE98F7 /* KumuChallengeUITests */,
 				49C5E1E726FE1E2200DE98F7 /* Products */,
+				196139D9AE5EF5703BEE5D68 /* Pods */,
+				9929628D6E7B707D9F45119D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -259,7 +287,6 @@
 				498179702701552000F0E774 /* Models */,
 				498179672700C98100F0E774 /* Workers */,
 				498179632700C92800F0E774 /* MovieListInteractor.swift */,
-				4967F834274D3F6600E0A74A /* SearchMovieInteractor.swift */,
 				4967F836274D3F7300E0A74A /* FavoriteMovieInteractor.swift */,
 			);
 			path = Interactor;
@@ -273,6 +300,16 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		9929628D6E7B707D9F45119D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				617510196E67424F3405346A /* Pods_KumuChallenge.framework */,
+				0FB613D3844433F8C968B58B /* Pods_KumuChallenge_KumuChallengeUITests.framework */,
+				01B089E0AC5391CE8BF232B9 /* Pods_KumuChallengeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -280,9 +317,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 49C5E21326FE1E2500DE98F7 /* Build configuration list for PBXNativeTarget "KumuChallenge" */;
 			buildPhases = (
+				D73E281D04E23740437ADCB0 /* [CP] Check Pods Manifest.lock */,
 				49C5E1E226FE1E2200DE98F7 /* Sources */,
 				49C5E1E326FE1E2200DE98F7 /* Frameworks */,
 				49C5E1E426FE1E2200DE98F7 /* Resources */,
+				BD1483C657173E3ECC26A0E9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -297,6 +336,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 49C5E21626FE1E2500DE98F7 /* Build configuration list for PBXNativeTarget "KumuChallengeTests" */;
 			buildPhases = (
+				DEB514A0A6FE21D885EBBF65 /* [CP] Check Pods Manifest.lock */,
 				49C5E1FB26FE1E2500DE98F7 /* Sources */,
 				49C5E1FC26FE1E2500DE98F7 /* Frameworks */,
 				49C5E1FD26FE1E2500DE98F7 /* Resources */,
@@ -315,9 +355,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 49C5E21926FE1E2500DE98F7 /* Build configuration list for PBXNativeTarget "KumuChallengeUITests" */;
 			buildPhases = (
+				0F013B9CDBCD51FD72FFE2B7 /* [CP] Check Pods Manifest.lock */,
 				49C5E20626FE1E2500DE98F7 /* Sources */,
 				49C5E20726FE1E2500DE98F7 /* Frameworks */,
 				49C5E20826FE1E2500DE98F7 /* Resources */,
+				BFBA6442706FF04BF63733F9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -398,6 +440,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0F013B9CDBCD51FD72FFE2B7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KumuChallenge-KumuChallengeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD1483C657173E3ECC26A0E9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KumuChallenge/Pods-KumuChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KumuChallenge/Pods-KumuChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KumuChallenge/Pods-KumuChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFBA6442706FF04BF63733F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KumuChallenge-KumuChallengeUITests/Pods-KumuChallenge-KumuChallengeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KumuChallenge-KumuChallengeUITests/Pods-KumuChallenge-KumuChallengeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KumuChallenge-KumuChallengeUITests/Pods-KumuChallenge-KumuChallengeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D73E281D04E23740437ADCB0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KumuChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEB514A0A6FE21D885EBBF65 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KumuChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		49C5E1E226FE1E2200DE98F7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -408,16 +553,15 @@
 				498179662700C96E00F0E774 /* MoviePresenter.swift in Sources */,
 				4981796B2700C98F00F0E774 /* RequestWorker.swift in Sources */,
 				49C8BF4227087D44001C542F /* CoreDataWorker.swift in Sources */,
+				4967F839274EBFB600E0A74A /* UIColor+Hex.swift in Sources */,
 				498179602700C65700F0E774 /* MoviesViewController.swift in Sources */,
 				49C5E1EA26FE1E2200DE98F7 /* AppDelegate.swift in Sources */,
-				4967F833274B3D2700E0A74A /* UIView+Constraints.swift in Sources */,
 				498179722701554500F0E774 /* Movie.swift in Sources */,
 				4981797427023E0300F0E774 /* MovieList.swift in Sources */,
 				498179642700C92800F0E774 /* MovieListInteractor.swift in Sources */,
 				4981797E27024A9D00F0E774 /* Presenter.swift in Sources */,
 				4981796F2700D1F800F0E774 /* RequestConstants.swift in Sources */,
 				4967F837274D3F7300E0A74A /* FavoriteMovieInteractor.swift in Sources */,
-				4967F835274D3F6600E0A74A /* SearchMovieInteractor.swift in Sources */,
 				496CDAE12718718F0050C0FA /* ImageCache.swift in Sources */,
 				49C5E1F426FE1E2200DE98F7 /* KumuChallenge.xcdatamodeld in Sources */,
 				4981797C27024A9400F0E774 /* Interactor.swift in Sources */,
@@ -597,12 +741,14 @@
 		};
 		49C5E21426FE1E2500DE98F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D3C1435D0125DC346D0759F /* Pods-KumuChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P83U5S834U;
 				INFOPLIST_FILE = KumuChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -616,12 +762,14 @@
 		};
 		49C5E21526FE1E2500DE98F7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C04F482CADBF4A77BF4BD33 /* Pods-KumuChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P83U5S834U;
 				INFOPLIST_FILE = KumuChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -635,6 +783,7 @@
 		};
 		49C5E21726FE1E2500DE98F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89D6D904A5B71A41657C9DE8 /* Pods-KumuChallengeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -657,6 +806,7 @@
 		};
 		49C5E21826FE1E2500DE98F7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FFF3E3262FD55617129859C /* Pods-KumuChallengeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -679,6 +829,7 @@
 		};
 		49C5E21A26FE1E2500DE98F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97917EBD1E3F996565D23AF5 /* Pods-KumuChallenge-KumuChallengeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -699,6 +850,7 @@
 		};
 		49C5E21B26FE1E2500DE98F7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B613BF231103F2A843626C9D /* Pods-KumuChallenge-KumuChallengeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

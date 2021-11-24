@@ -9,7 +9,7 @@ import Foundation
 
 final class MoviePresenter: Presenter {
     
-    private var viewController: View
+    var viewController: View
     
     init(view: View) {
         viewController = view

@@ -7,8 +7,13 @@
 
 import Foundation
 
+/// Fetch movies result model.
 struct MovieList: Decodable {
+    
+    /// Number of movies received in API response.
     var resultCount: Int
+    
+    /// Array of movie objects.
     var movies: [Movie]
     
     private enum CodingKeys: String, CodingKey {

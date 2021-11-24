@@ -1,0 +1,6 @@
+framework module Pods_KumuChallenge_KumuChallengeUITests {
+  umbrella header "Pods-KumuChallenge-KumuChallengeUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
