@@ -50,7 +50,7 @@ final class CoreDataWorker {
             } catch {
                 let nserror = error as NSError
                 dump("Unresolved error \(nserror), \(nserror.userInfo)")
-                completion?(.failure(error))
+                completion?(.failure(.contextError(error: error)))
             }
         }
     }
@@ -64,6 +64,7 @@ final class CoreDataWorker {
     func saveMovie(_ movie: Movie, completion: ResultClosure? = nil) {
         guard let _movieEntity = movieEntity,
               let trackId = movie.trackId else {
+            completion?(.failure(.saveError(error: nil)))
             return
         }
         

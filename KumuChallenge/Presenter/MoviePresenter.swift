@@ -9,17 +9,13 @@ import Foundation
 
 final class MoviePresenter: Presenter {
     
-    var viewController: View
-    
-    init(view: View) {
-        viewController = view
-    }
-    
+    weak var viewController: View?
+   
     func processMovies(_ movies: [Movie]) {
         var models: [MovieViewModel] = []
         movies.forEach { movie in
             models.append(MovieViewModel(movie))
         }
-        viewController.showMovies(models)
+        viewController?.showMovies(models)
     }
 }

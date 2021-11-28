@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol View {
+protocol View: AnyObject {
     
     /// Show movies in user interface.
     /// - Parameter movieModels: Movie view models that will contain data to be presented in the UI.

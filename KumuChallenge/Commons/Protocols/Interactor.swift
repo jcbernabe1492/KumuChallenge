@@ -7,13 +7,11 @@
 
 import Foundation
 
-protocol Interactor {
+protocol MovieFetcher {
     
-    /// Presenter instance that will receive data from interactor for processing.
-    var presenter: Presenter { get set }
-}
-
-protocol MovieFetcher: Interactor {
+    var requestWorker: RequestWorker { get set }
+    
+    var presenter: Presenter? { get set }
     
     /// Fetch movies
     func fetchMovies()
@@ -23,7 +21,7 @@ protocol MovieFetcher: Interactor {
     func searchMovies(searchString: String)
 }
 
-protocol FavoriteMovieFetcher: Interactor {
+protocol FavoriteMovieFetcher {
     
     /// Fetch favorite movies.
     func fetchFavoriteMovies()

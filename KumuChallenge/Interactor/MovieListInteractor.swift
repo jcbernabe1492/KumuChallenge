@@ -9,23 +9,27 @@ import Foundation
 
 final class MovieListInteractor: MovieFetcher {
     
-    var presenter: Presenter
+    var requestWorker: RequestWorker
+     
+    var presenter: Presenter?
     
-    init(presenter: Presenter) {
-        self.presenter = presenter
+    init(worker: RequestWorker = RequestWorker()) {
+        requestWorker = worker
     }
     
     func fetchMovies() {
-        let dispatchGrp = DispatchGroup()
-        let dispatchQueue = DispatchQueue(label: "PersistingMoviesQueue")
-        
-        RequestWorker.request(ofType: MovieList.self,
+        requestWorker.request(ofType: MovieList.self,
                               baseURL: "https://itunes.apple.com/search?term=star&amp;country=au&amp;media=movie&amp;all",
                               endpoint: "") { result in
+            
+            let dispatchGrp = DispatchGroup()
+            let dispatchQueue = DispatchQueue(label: "PersistingMoviesQueue")
+            
             switch result {
             case .success(let movieList):
                 for movie in movieList.movies {
                     dispatchGrp.enter()
+                    print("[jc] enter")
                     CoreDataWorker.shared.saveMovie(movie) { result in
                         
                         switch result {
@@ -36,27 +40,29 @@ final class MovieListInteractor: MovieFetcher {
                             dump("Core data saving error \(error)")
                         }
                         dispatchGrp.leave()
+                        print("[jc] leave")
                     }
                 }
                 
             case .failure(let error):
                 dump("error \(error)")
             }
-        }
-        
-        dispatchGrp.notify(queue: dispatchQueue) {
-            let movies = CoreDataWorker.shared.fetchMovies()
-            self.presenter.processMovies(movies)
+            
+            dispatchGrp.notify(queue: dispatchQueue) {
+                print("[jc] notify")
+                let movies = CoreDataWorker.shared.fetchMovies()
+                self.presenter?.processMovies(movies)
+            }
         }
     }
     
     func searchMovies(searchString: String) { 
-        RequestWorker.request(ofType: MovieList.self,
+        requestWorker.request(ofType: MovieList.self,
                               baseURL: "https://itunes.apple.com/search?term=\(searchString)&amp;country=au&amp;media=movie&amp;all",
                               endpoint: "") { result in
             switch result {
             case .success(let movieList):
-                self.presenter.processMovies(movieList.movies)
+                self.presenter?.processMovies(movieList.movies)
                 
             case .failure(let error):
                 dump("error \(error)")

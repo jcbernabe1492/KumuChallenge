@@ -10,6 +10,27 @@ import SnapKit
 
 class MoviesViewController: UIViewController {
     
+    /// Reference to movie list interactor that fetches list of movies.
+    ///
+    /// Interactor initiates processing of data that will later be received by this view via the presenter.
+    var movieListInteractor: MovieFetcher?
+    
+    /// Movies view model list.
+    var movies: [MovieViewModel] = []
+    
+    /// List of searched movies.
+    ///
+    /// Used a different array of view models for searching to retain original list after exiting search.
+    var searchedMovies: [MovieViewModel] = []
+    
+    /// Flag if search is active or not.
+    var isSearching = false
+    
+    /// Reference to favorite movie interactor that fetches list of favorite movies.
+    ///
+    /// Interactor initiates processing of data that will later be received by this view via the presenter.
+    lazy var favoriteMovieInteractor = FavoriteMovieInteractor()
+    
     /// Reference to movies table.
     private lazy var moviesTable = UITableView(frame: view.bounds)
     
@@ -19,35 +40,9 @@ class MoviesViewController: UIViewController {
                                                            target: self,
                                                            action: #selector(favoritesTapped))
     
-    /// Movies view model list.
-    private var movies: [MovieViewModel] = []
-    
-    /// List of searched movies.
-    ///
-    /// Used a different array of view models for searching to retain original list after exiting search.
-    private var searchedMovies: [MovieViewModel] = []
-    
-    /// Reference to movie presenter.
-    ///
-    /// Presenter processes data before giving it to this view controller.
-    private lazy var presenter = MoviePresenter(view: self)
-    
-    /// Reference to movie list interactor that fetches list of movies.
-    ///
-    /// Interactor initiates processing of data that will later be received by this view via the presenter.
-    private lazy var movieListInteractor = MovieListInteractor(presenter: presenter)
-    
-    /// Reference to favorite movie interactor that fetches list of favorite movies.
-    ///
-    /// Interactor initiates processing of data that will later be received by this view via the presenter.
-    private lazy var favoriteMovieInteractor = FavoriteMovieInteractor(presenter: presenter)
-    
     /// Flag if favorites list is currently active or not.
     private var isFavoritesShowing = false
-    
-    /// Flag if search is active or not.
-    private var isSearching = false
-    
+        
     /// Reference to search controller.
     private let searchController = UISearchController(searchResultsController: nil)
     
@@ -67,7 +62,7 @@ class MoviesViewController: UIViewController {
         super.viewWillAppear(animated)
         setNeedsStatusBarAppearanceUpdate()
         if movies.count == 0 {
-            movieListInteractor.fetchMovies()
+            movieListInteractor?.fetchMovies()
         }
     }
     
@@ -114,6 +109,7 @@ class MoviesViewController: UIViewController {
         searchController.searchBar.delegate = self
         searchController.searchBar.backgroundImage = UIImage()
         searchController.searchBar.backgroundColor = bgColor
+        searchController.searchBar.barStyle = .black
         
         navigationItem.searchController = searchController
         navigationItem.hidesSearchBarWhenScrolling = false
@@ -126,7 +122,7 @@ class MoviesViewController: UIViewController {
     @objc func favoritesTapped() {
         if isFavoritesShowing {
             // Hide favorites
-            movieListInteractor.fetchMovies()
+            movieListInteractor?.fetchMovies()
             favoriteListBarItem.title = "Show Faves"
         } else {
             // Show favorites
@@ -197,7 +193,7 @@ extension MoviesViewController: UITableViewDelegate, UITableViewDataSource {
         
         cell.selectionStyle = .none
         
-        cell.setMovieData((isSearching ? searchedMovies : movies)[indexPath.row])
+        cell.setMovieData((isSearching ? searchedMovies : movies)[indexPath.row], isSearch: isSearching)
         cell.favoriteAction = { id, isFavorite in
             self.favoriteMovieInteractor.setFavoriteMovie(id: id, isFavorite: isFavorite)
         }
@@ -205,12 +201,12 @@ extension MoviesViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let detailsVc = MovieDetailsViewController(model: movies[indexPath.row])
+        let detailsVc = MovieDetailsViewController(model: (isSearching ? searchedMovies : movies)[indexPath.row])
         navigationController?.pushViewController(detailsVc, animated: true)
     }
 }
 
-// MARK: - UISearch
+// MARK: - Searching
 
 extension MoviesViewController: UISearchResultsUpdating, UISearchBarDelegate {
     
@@ -220,6 +216,8 @@ extension MoviesViewController: UISearchResultsUpdating, UISearchBarDelegate {
     
     func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
         isSearching = false
+        moviesTable.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: false)
+        moviesTable.reloadData()
     }
     
     func updateSearchResults(for searchController: UISearchController) {
@@ -230,7 +228,7 @@ extension MoviesViewController: UISearchResultsUpdating, UISearchBarDelegate {
         } else {
             // Added delay to give buffer when user is typing slow.
             DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(500)) {
-                self.movieListInteractor.searchMovies(searchString: strippedString)
+                self.movieListInteractor?.searchMovies(searchString: strippedString)
             }
         }
     }

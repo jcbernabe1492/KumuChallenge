@@ -19,16 +19,21 @@ enum RequestError: Error {
 struct RequestWorker {
     
     typealias objectResult<T> = (Result<T, Error>) -> Void
-    typealias dataResult = (Result<Data, Error>) -> Void
     
-    static func request<T: Decodable>(ofType: T.Type,
-                                      baseURL: String,
-                                      endpoint: String,
-                                      method: RequestMethods = .GET,
-                                      headers: [String: String]? = nil,
-                                      query: [String: String]? = nil,
-                                      body: [String: Any]? = nil,
-                                      completion: @escaping objectResult<T>) {
+    private let urlSession: URLSessionProtocol
+    
+    init(urlSession: URLSessionProtocol = URLSession.shared) {
+        self.urlSession = urlSession
+    }
+    
+    func request<T: Decodable>(ofType: T.Type,
+                               baseURL: String,
+                               endpoint: String,
+                               method: RequestMethods = .GET,
+                               headers: [String: String]? = nil,
+                               query: [String: String]? = nil,
+                               body: [String: Any]? = nil,
+                               completion: @escaping objectResult<T>) {
         guard let urlRequest = RequestUtils.generateURLRequest(baseURL: baseURL,
                                                                 endpoint: endpoint,
                                                                 method: method,
@@ -39,7 +44,7 @@ struct RequestWorker {
             return
         }
         
-        URLSession.shared.dataTask(with: urlRequest) { data, response, error in
+        urlSession.dataTask(with: urlRequest) { data, response, error in
             if let _error = error {
                 completion(.failure(_error))
             }

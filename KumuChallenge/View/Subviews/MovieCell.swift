@@ -33,6 +33,11 @@ class MovieCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        thumbnail.image = nil
+    }
+    
     private func setupInterface() {
         backgroundColor = UIColor.clear
         
@@ -100,11 +105,14 @@ class MovieCell: UITableViewCell {
         thumbnail.contentMode = .scaleAspectFit
     }
     
-    func setMovieData(_ movie: MovieViewModel) {
+    func setMovieData(_ movie: MovieViewModel, isSearch: Bool) {
         movieId = movie.movieId
         nameLbl.text = movie.name
         priceLbl.text = movie.price
         genreLbl.text = movie.genre
+        if isSearch {
+            favoriteBtn.isHidden = true
+        }
         favoriteBtn.isSelected = movie.isFavorite
         if let url = movie.artworkURL {
             ImageCache.shared.loadImage(from: url) { result in

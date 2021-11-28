@@ -15,8 +15,8 @@ class MovieDetailsViewController: UIViewController {
     
     private let holderView = UIView(frame: .zero)
     
+    let nameLbl = UILabel(frame: .zero)
     private let thumbnail = UIImageView(frame: .zero)
-    private let nameLbl = UILabel(frame: .zero)
     private let priceLbl = UILabel(frame: .zero)
     private let hdPriceLbl = UILabel(frame: .zero)
     private let genreLbl = UILabel(frame: .zero)

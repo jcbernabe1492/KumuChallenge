@@ -9,15 +9,11 @@ import Foundation
 
 final class FavoriteMovieInteractor: FavoriteMovieFetcher {
     
-    var presenter: Presenter
+    var presenter: Presenter?
     
-    init(presenter: Presenter) {
-        self.presenter = presenter
-    }
-        
     func fetchFavoriteMovies() {
         let faveMovies = CoreDataWorker.shared.fetchMovies(isFavorites: true)
-        presenter.processMovies(faveMovies)
+        presenter?.processMovies(faveMovies)
     }
     
     func setFavoriteMovie(id: Int, isFavorite: Bool) {

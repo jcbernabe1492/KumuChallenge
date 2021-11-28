@@ -3,4 +3,70 @@
    uuid = "B2F84099-B736-4771-8F9A-1C10ECDA7E87"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "45F36D1F-E30E-45F3-96E2-1CA8E87D1294"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KumuChallenge/Interactor/FavoriteMovieInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "fetchFavoriteMovies()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CE7AD879-146C-4734-BDC2-1A1C10B6D102"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KumuChallenge/Presenter/MoviePresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "processMovies(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "CE7AD879-146C-4734-BDC2-1A1C10B6D102 - 7626a51a2a3a2eef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "KumuChallenge.MoviePresenter.processMovies(Swift.Array&lt;KumuChallenge.Movie&gt;) -&gt; ()"
+                  moduleName = "KumuChallenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jc/Documents/KumuChallenge/KumuChallenge/Presenter/MoviePresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "122">
+               </Location>
+               <Location
+                  uuid = "CE7AD879-146C-4734-BDC2-1A1C10B6D102 - 30ad957b7c990b49"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (KumuChallenge.Movie) -&gt; () in KumuChallenge.MoviePresenter.processMovies(Swift.Array&lt;KumuChallenge.Movie&gt;) -&gt; ()"
+                  moduleName = "KumuChallenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jc/Documents/KumuChallenge/KumuChallenge/Presenter/MoviePresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "35">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         CoreDataWorker.shared.saveContext()
         
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = UINavigationController(rootViewController: MoviesViewController())
+        window?.rootViewController = UINavigationController(rootViewController: Configurator().setupViewController())
         window?.makeKeyAndVisible()
         
         return true
