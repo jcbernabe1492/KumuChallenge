@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CoreDataWorker Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/CoreDataWorker" class="dashAnchor"></a>
+    <a title="CoreDataWorker Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (22% documented)</p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        CoreDataWorker Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AppDelegate.html">AppDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Configurator.html">Configurator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CoreDataWorker.html">CoreDataWorker</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FavoriteMovieInteractor.html">FavoriteMovieInteractor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ImageCache.html">ImageCache</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Movie.html">Movie</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Movie/CodingKeys.html">– CodingKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MovieCell.html">MovieCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MovieDetailsViewController.html">MovieDetailsViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MovieListInteractor.html">MovieListInteractor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MoviePresenter.html">MoviePresenter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MoviesViewController.html">MoviesViewController</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Global%20Variables.html">Global Variables</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Global%20Variables.html#/s:13KumuChallenge7bgColorSo7UIColorCvp">bgColor</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/RequestError.html">RequestError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RequestMethods.html">RequestMethods</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ResultError.html">ResultError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/WrapperType.html">WrapperType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/UIColor.html">UIColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/URLSession.html">URLSession</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/c:objc(cs)NSURLSessionDataTask">URLSessionDataTask</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/FavoriteMovieFetcher.html">FavoriteMovieFetcher</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/MovieFetcher.html">MovieFetcher</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Presenter.html">Presenter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/URLSessionDataTaskProtocol.html">URLSessionDataTaskProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/URLSessionProtocol.html">URLSessionProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/View.html">View</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/MovieList.html">MovieList</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MovieList/CodingKeys.html">– CodingKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MovieViewModel.html">MovieViewModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RequestUtils.html">RequestUtils</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RequestWorker.html">RequestWorker</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13KumuChallenge13ResultClosurea">ResultClosure</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13KumuChallenge11VoidClosurea">VoidClosure</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>CoreDataWorker</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">final</span> <span class="kd">class</span> <span class="kt">CoreDataWorker</span></code></pre>
+
+                </div>
+              </div>
+            <p>Worker class that will handle all core data related processes.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13KumuChallenge14CoreDataWorkerC6sharedACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/shared" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13KumuChallenge14CoreDataWorkerC6sharedACvpZ">shared</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Singleton instance.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">let</span> <span class="nv">shared</span><span class="p">:</span> <span class="kt">CoreDataWorker</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13KumuChallenge14CoreDataWorkerC19persistentContainer33_158BFE76E8E6C91400505730D5F6F5A9LLSo012NSPersistentG0Cvp"></a>
+                    <a name="//apple_ref/swift/Property/persistentContainer" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13KumuChallenge14CoreDataWorkerC19persistentContainer33_158BFE76E8E6C91400505730D5F6F5A9LLSo012NSPersistentG0Cvp">persistentContainer</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Reference to persistent container.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">persistentContainer</span><span class="p">:</span> <span class="kt">NSPersistentContainer</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13KumuChallenge14CoreDataWorkerC7context33_158BFE76E8E6C91400505730D5F6F5A9LLSo22NSManagedObjectContextCvp"></a>
+                    <a name="//apple_ref/swift/Property/context" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13KumuChallenge14CoreDataWorkerC7context33_158BFE76E8E6C91400505730D5F6F5A9LLSo22NSManagedObjectContextCvp">context</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Reference to <em>NSManagedObjectContext.</em></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">context</span><span class="p">:</span> <span class="kt">NSManagedObjectContext</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13KumuChallenge14CoreDataWorkerC11movieEntity33_158BFE76E8E6C91400505730D5F6F5A9LLSo19NSEntityDescriptionCSgvp"></a>
+                    <a name="//apple_ref/swift/Property/movieEntity" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13KumuChallenge14CoreDataWorkerC11movieEntity33_158BFE76E8E6C91400505730D5F6F5A9LLSo19NSEntityDescriptionCSgvp">movieEntity</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Reference to movie entity.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="k">var</span> <span class="nv">movieEntity</span><span class="p">:</span> <span class="kt">NSEntityDescription</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13KumuChallenge14CoreDataWorkerC15movieEntityName33_158BFE76E8E6C91400505730D5F6F5A9LLSSvp"></a>
+                    <a name="//apple_ref/swift/Property/movieEntityName" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13KumuChallenge14CoreDataWorkerC15movieEntityName33_158BFE76E8E6C91400505730D5F6F5A9LLSSvp">movieEntityName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Name constant of move entity.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="k">let</span> <span class="nv">movieEntityName</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Manage%20Context"></a>
+                <a name="//apple_ref/swift/Section/Manage Context" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Manage%20Context"></a>
+                  <h3 class="section-name"><span>Manage Context</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13KumuChallenge14CoreDataWorkerC11saveContext10completionyys6ResultOyypSgAA0I5ErrorOGcSg_tF"></a>
+                    <a name="//apple_ref/swift/Method/saveContext(completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13KumuChallenge14CoreDataWorkerC11saveContext10completionyys6ResultOyypSgAA0I5ErrorOGcSg_tF">saveContext(completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Save managed object context to apply changes within persistent store.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">saveContext</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:13KumuChallenge13ResultClosurea">ResultClosure</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Result closure that tells if saving succeeds or not.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/CRUD%20Functions"></a>
+                <a name="//apple_ref/swift/Section/CRUD Functions" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/CRUD%20Functions"></a>
+                  <h3 class="section-name"><span>CRUD Functions</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13KumuChallenge14CoreDataWorkerC9saveMovie_10completionyAA0G0C_ys6ResultOyypSgAA0I5ErrorOGcSgtF"></a>
+                    <a name="//apple_ref/swift/Method/saveMovie(_:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13KumuChallenge14CoreDataWorkerC9saveMovie_10completionyAA0G0C_ys6ResultOyypSgAA0I5ErrorOGcSgtF">saveMovie(_:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Save a movie to persistent store.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">saveMovie</span><span class="p">(</span><span class="n">_</span> <span class="nv">movie</span><span class="p">:</span> <span class="kt"><a href="../Classes/Movie.html">Movie</a></span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:13KumuChallenge13ResultClosurea">ResultClosure</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>movie</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Movie model that contains details to be saved.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Result closure that tells if saving succeeds or not.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13KumuChallenge14CoreDataWorkerC11fetchMovies11isFavoritesSayAA5MovieCGSb_tF"></a>
+                    <a name="//apple_ref/swift/Method/fetchMovies(isFavorites:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13KumuChallenge14CoreDataWorkerC11fetchMovies11isFavoritesSayAA5MovieCGSb_tF">fetchMovies(isFavorites:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Fetch all movies saved within the persistent store.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">fetchMovies</span><span class="p">(</span><span class="nv">isFavorites</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt"><a href="../Classes/Movie.html">Movie</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>isFavorites</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>If fetching should get favorite movies list or all movies list.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Array of movies, with each item containing details of each entry in the persistent store.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13KumuChallenge14CoreDataWorkerC19updateFavoriteMovie7trackId02isG0ySi_SbtF"></a>
+                    <a name="//apple_ref/swift/Method/updateFavoriteMovie(trackId:isFavorite:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13KumuChallenge14CoreDataWorkerC19updateFavoriteMovie7trackId02isG0ySi_SbtF">updateFavoriteMovie(trackId:<wbr>isFavorite:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Update a movie to set if it&rsquo;s the users favorite or not.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">updateFavoriteMovie</span><span class="p">(</span><span class="nv">trackId</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">isFavorite</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>trackId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Track id of the movie to be updated.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>isFavorite</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>If movie is favorite or not.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Helper%20Functions"></a>
+                <a name="//apple_ref/swift/Section/Helper Functions" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Helper%20Functions"></a>
+                  <h3 class="section-name"><span>Helper Functions</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13KumuChallenge14CoreDataWorkerC14setMovieValues33_158BFE76E8E6C91400505730D5F6F5A9LL_12toManagedObj8isUpdateyAA0G0C_So15NSManagedObjectCSbtF"></a>
+                    <a name="//apple_ref/swift/Method/setMovieValues(_:toManagedObj:isUpdate:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13KumuChallenge14CoreDataWorkerC14setMovieValues33_158BFE76E8E6C91400505730D5F6F5A9LL_12toManagedObj8isUpdateyAA0G0C_So15NSManagedObjectCSbtF">setMovieValues(_:<wbr>toManagedObj:<wbr>isUpdate:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set movie values to an <em>NSManagedObject</em>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="kd">func</span> <span class="nf">setMovieValues</span><span class="p">(</span><span class="n">_</span> <span class="nv">movie</span><span class="p">:</span> <span class="kt"><a href="../Classes/Movie.html">Movie</a></span><span class="p">,</span> <span class="nv">toManagedObj</span><span class="p">:</span> <span class="kt">NSManagedObject</span><span class="p">,</span> <span class="nv">isUpdate</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>movie</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Movie model that contains details to be saved.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>toManagedObj</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><em>NSManagedObject</em> instance where movie details will be set.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>isUpdate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>If setting of values is requested as part of inserting new entry or just updating an existing one.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13KumuChallenge14CoreDataWorkerC23createMovieFetchRequest33_158BFE76E8E6C91400505730D5F6F5A9LL11isFavoritesSo07NSFetchI0CySo0tI6Result_pGSb_tF"></a>
+                    <a name="//apple_ref/swift/Method/createMovieFetchRequest(isFavorites:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13KumuChallenge14CoreDataWorkerC23createMovieFetchRequest33_158BFE76E8E6C91400505730D5F6F5A9LL11isFavoritesSo07NSFetchI0CySo0tI6Result_pGSb_tF">createMovieFetchRequest(isFavorites:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create fetch request for retreiving movie lists.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="kd">func</span> <span class="nf">createMovieFetchRequest</span><span class="p">(</span><span class="nv">isFavorites</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">NSFetchRequest</span><span class="o">&lt;</span><span class="kt">NSFetchRequestResult</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>isFavorites</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>If data to be requested is for fetching favorite movies or not.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><em>NSFetchRequest</em> instance to be used when trying to get data from the persistent store.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13KumuChallenge14CoreDataWorkerC25createTrackIdFetchRequest33_158BFE76E8E6C91400505730D5F6F5A9LLySo07NSFetchJ0CySo0sJ6Result_pGSiF"></a>
+                    <a name="//apple_ref/swift/Method/createTrackIdFetchRequest(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13KumuChallenge14CoreDataWorkerC25createTrackIdFetchRequest33_158BFE76E8E6C91400505730D5F6F5A9LLySo07NSFetchJ0CySo0sJ6Result_pGSiF">createTrackIdFetchRequest(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create fetch request for getting an entry with a specific track id.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="kd">func</span> <span class="nf">createTrackIdFetchRequest</span><span class="p">(</span><span class="n">_</span> <span class="nv">trackId</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">NSFetchRequest</span><span class="o">&lt;</span><span class="kt">NSFetchRequestResult</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>trackId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Track id of entry to be fetched.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><em>NSFetchRequest</em> instance to be used when trying to get data from the persistent store.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2021 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2021-11-30)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>

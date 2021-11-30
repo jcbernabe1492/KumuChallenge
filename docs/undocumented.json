@@ -1,0 +1,1097 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/AppDelegate.swift",
+      "line": 11,
+      "symbol": "AppDelegate",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/AppDelegate.swift",
+      "line": 12,
+      "symbol": "AppDelegate.window",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/AppDelegate.swift",
+      "line": 14,
+      "symbol": "AppDelegate.application(_:didFinishLaunchingWithOptions:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Commons/Constants.swift",
+      "line": 10,
+      "symbol": "ResultError",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Commons/Constants.swift",
+      "line": 11,
+      "symbol": "ResultError.saveError(error:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Commons/Constants.swift",
+      "line": 12,
+      "symbol": "ResultError.contextError(error:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Commons/Constants.swift",
+      "line": 14,
+      "symbol": "ResultError.description",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Commons/Constants.swift",
+      "line": 24,
+      "symbol": "VoidClosure",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Commons/Constants.swift",
+      "line": 25,
+      "symbol": "ResultClosure",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Commons/Constants.swift",
+      "line": 27,
+      "symbol": "bgColor",
+      "symbol_kind": "source.lang.swift.decl.var.global",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Commons/Extensions/UIColor+Hex.swift",
+      "line": 12,
+      "symbol": "UIColor.init(hexString:alpha:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Commons/Protocols/Interactor.swift",
+      "line": 10,
+      "symbol": "MovieFetcher",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Commons/Protocols/Interactor.swift",
+      "line": 12,
+      "symbol": "MovieFetcher.requestWorker",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Commons/Protocols/Interactor.swift",
+      "line": 14,
+      "symbol": "MovieFetcher.presenter",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Commons/Protocols/Interactor.swift",
+      "line": 24,
+      "symbol": "FavoriteMovieFetcher",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Commons/Protocols/Presenter.swift",
+      "line": 10,
+      "symbol": "Presenter",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Commons/Protocols/URLSessionProtocol.swift",
+      "line": 10,
+      "symbol": "URLSessionProtocol",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Commons/Protocols/URLSessionProtocol.swift",
+      "line": 11,
+      "symbol": "URLSessionProtocol.DataTaskResult",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Commons/Protocols/URLSessionProtocol.swift",
+      "line": 13,
+      "symbol": "URLSessionProtocol.dataTask(with:completionHandler:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Commons/Protocols/URLSessionProtocol.swift",
+      "line": 16,
+      "symbol": "URLSessionDataTaskProtocol",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Commons/Protocols/URLSessionProtocol.swift",
+      "line": 17,
+      "symbol": "URLSessionDataTaskProtocol.resume()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Commons/Protocols/URLSessionProtocol.swift",
+      "line": 21,
+      "symbol": "URLSession.dataTask(with:completionHandler:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Commons/Protocols/View.swift",
+      "line": 10,
+      "symbol": "View",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Commons/Utilities/ImageCache.swift",
+      "line": 16,
+      "symbol": "ImageCache.imageResult",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Configurator/Configurator.swift",
+      "line": 10,
+      "symbol": "Configurator",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Configurator/Configurator.swift",
+      "line": 12,
+      "symbol": "Configurator.setupViewController()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/FavoriteMovieInteractor.swift",
+      "line": 10,
+      "symbol": "FavoriteMovieInteractor",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/FavoriteMovieInteractor.swift",
+      "line": 12,
+      "symbol": "FavoriteMovieInteractor.presenter",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/Models/Movie.swift",
+      "line": 10,
+      "symbol": "WrapperType",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/Models/Movie.swift",
+      "line": 11,
+      "symbol": "WrapperType.track",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/Models/Movie.swift",
+      "line": 12,
+      "symbol": "WrapperType.audioBook",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/Models/Movie.swift",
+      "line": 15,
+      "symbol": "Movie",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/Models/Movie.swift",
+      "line": 17,
+      "symbol": "Movie.wrapperType",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/Models/Movie.swift",
+      "line": 19,
+      "symbol": "Movie.trackId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/Models/Movie.swift",
+      "line": 20,
+      "symbol": "Movie.trackName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/Models/Movie.swift",
+      "line": 22,
+      "symbol": "Movie.artistName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/Models/Movie.swift",
+      "line": 24,
+      "symbol": "Movie.artworkUrl100",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/Models/Movie.swift",
+      "line": 26,
+      "symbol": "Movie.trackPrice",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/Models/Movie.swift",
+      "line": 27,
+      "symbol": "Movie.trackRentalPrice",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/Models/Movie.swift",
+      "line": 28,
+      "symbol": "Movie.trackHdPrice",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/Models/Movie.swift",
+      "line": 29,
+      "symbol": "Movie.trackHdRentalPrice",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/Models/Movie.swift",
+      "line": 31,
+      "symbol": "Movie.collectionId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/Models/Movie.swift",
+      "line": 32,
+      "symbol": "Movie.collectionName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/Models/Movie.swift",
+      "line": 33,
+      "symbol": "Movie.collectionPrice",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/Models/Movie.swift",
+      "line": 34,
+      "symbol": "Movie.collectionHdPrice",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/Models/Movie.swift",
+      "line": 36,
+      "symbol": "Movie.currency",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/Models/Movie.swift",
+      "line": 38,
+      "symbol": "Movie.primaryGenreName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/Models/Movie.swift",
+      "line": 40,
+      "symbol": "Movie.trackTimeMillis",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/Models/Movie.swift",
+      "line": 42,
+      "symbol": "Movie.longDescription",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/Models/Movie.swift",
+      "line": 44,
+      "symbol": "Movie.isFavorite",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/Models/Movie.swift",
+      "line": 46,
+      "symbol": "Movie.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/Models/Movie.swift",
+      "line": 47,
+      "symbol": "Movie.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/Models/Movie.swift",
+      "line": 49,
+      "symbol": "Movie.CodingKeys",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/Models/Movie.swift",
+      "line": 50,
+      "symbol": "Movie.CodingKeys.trackId",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/Models/Movie.swift",
+      "line": 51,
+      "symbol": "Movie.CodingKeys.trackName",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/Models/Movie.swift",
+      "line": 53,
+      "symbol": "Movie.CodingKeys.artistName",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/Models/Movie.swift",
+      "line": 55,
+      "symbol": "Movie.CodingKeys.artworkUrl100",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/Models/Movie.swift",
+      "line": 57,
+      "symbol": "Movie.CodingKeys.trackPrice",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/Models/Movie.swift",
+      "line": 58,
+      "symbol": "Movie.CodingKeys.trackRentalPrice",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/Models/Movie.swift",
+      "line": 59,
+      "symbol": "Movie.CodingKeys.trackHdPrice",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/Models/Movie.swift",
+      "line": 60,
+      "symbol": "Movie.CodingKeys.trackHdRentalPrice",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/Models/Movie.swift",
+      "line": 62,
+      "symbol": "Movie.CodingKeys.collectionId",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/Models/Movie.swift",
+      "line": 63,
+      "symbol": "Movie.CodingKeys.collectionName",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/Models/Movie.swift",
+      "line": 64,
+      "symbol": "Movie.CodingKeys.collectionPrice",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/Models/Movie.swift",
+      "line": 65,
+      "symbol": "Movie.CodingKeys.collectionHdPrice",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/Models/Movie.swift",
+      "line": 67,
+      "symbol": "Movie.CodingKeys.currency",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/Models/Movie.swift",
+      "line": 68,
+      "symbol": "Movie.CodingKeys.primaryGenreName",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/Models/Movie.swift",
+      "line": 69,
+      "symbol": "Movie.CodingKeys.trackTimeMillis",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/Models/Movie.swift",
+      "line": 70,
+      "symbol": "Movie.CodingKeys.longDescription",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/Models/Movie.swift",
+      "line": 72,
+      "symbol": "Movie.CodingKeys.isFavorite",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/Models/Movie.swift",
+      "line": 75,
+      "symbol": "Movie.encode(with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/Models/MovieList.swift",
+      "line": 19,
+      "symbol": "MovieList.CodingKeys",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/Models/MovieList.swift",
+      "line": 20,
+      "symbol": "MovieList.CodingKeys.resultCount",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/Models/MovieList.swift",
+      "line": 21,
+      "symbol": "MovieList.CodingKeys.movies",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/Models/RequestConstants.swift",
+      "line": 10,
+      "symbol": "RequestMethods",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/Models/RequestConstants.swift",
+      "line": 11,
+      "symbol": "RequestMethods.GET",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/Models/RequestConstants.swift",
+      "line": 12,
+      "symbol": "RequestMethods.POST",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/MovieListInteractor.swift",
+      "line": 10,
+      "symbol": "MovieListInteractor",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/MovieListInteractor.swift",
+      "line": 12,
+      "symbol": "MovieListInteractor.requestWorker",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/MovieListInteractor.swift",
+      "line": 14,
+      "symbol": "MovieListInteractor.presenter",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/MovieListInteractor.swift",
+      "line": 16,
+      "symbol": "MovieListInteractor.init(worker:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/Workers/RequestWorker.swift",
+      "line": 11,
+      "symbol": "RequestError",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/Workers/RequestWorker.swift",
+      "line": 12,
+      "symbol": "RequestError.invalidRequest",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/Workers/RequestWorker.swift",
+      "line": 13,
+      "symbol": "RequestError.invalidResponse",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/Workers/RequestWorker.swift",
+      "line": 14,
+      "symbol": "RequestError.errorResponse",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/Workers/RequestWorker.swift",
+      "line": 15,
+      "symbol": "RequestError.invalidData",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/Workers/RequestWorker.swift",
+      "line": 16,
+      "symbol": "RequestError.decodingError(error:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/Workers/RequestWorker.swift",
+      "line": 19,
+      "symbol": "RequestWorker",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/Workers/RequestWorker.swift",
+      "line": 21,
+      "symbol": "RequestWorker.objectResult",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/Workers/RequestWorker.swift",
+      "line": 23,
+      "symbol": "RequestWorker.urlSession",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/Workers/RequestWorker.swift",
+      "line": 25,
+      "symbol": "RequestWorker.init(urlSession:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/Workers/RequestWorker.swift",
+      "line": 29,
+      "symbol": "RequestWorker.request(ofType:baseURL:endpoint:method:headers:query:body:completion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Interactor/Workers/RequestWorker.swift",
+      "line": 78,
+      "symbol": "RequestWorker.clean(data:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Presenter/MoviePresenter.swift",
+      "line": 10,
+      "symbol": "MoviePresenter",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/Presenter/MoviePresenter.swift",
+      "line": 12,
+      "symbol": "MoviePresenter.viewController",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/View/Models/MovieViewModel.swift",
+      "line": 10,
+      "symbol": "MovieViewModel",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/View/Models/MovieViewModel.swift",
+      "line": 11,
+      "symbol": "MovieViewModel.movieId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/View/Models/MovieViewModel.swift",
+      "line": 12,
+      "symbol": "MovieViewModel.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/View/Models/MovieViewModel.swift",
+      "line": 13,
+      "symbol": "MovieViewModel.description",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/View/Models/MovieViewModel.swift",
+      "line": 14,
+      "symbol": "MovieViewModel.artworkURL",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/View/Models/MovieViewModel.swift",
+      "line": 15,
+      "symbol": "MovieViewModel.artworkThumb",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/View/Models/MovieViewModel.swift",
+      "line": 16,
+      "symbol": "MovieViewModel.artwork",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/View/Models/MovieViewModel.swift",
+      "line": 17,
+      "symbol": "MovieViewModel.price",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/View/Models/MovieViewModel.swift",
+      "line": 18,
+      "symbol": "MovieViewModel.hdPrice",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/View/Models/MovieViewModel.swift",
+      "line": 19,
+      "symbol": "MovieViewModel.genre",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/View/Models/MovieViewModel.swift",
+      "line": 20,
+      "symbol": "MovieViewModel.isFavorite",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/View/Models/MovieViewModel.swift",
+      "line": 22,
+      "symbol": "MovieViewModel.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/View/MovieDetailsViewController.swift",
+      "line": 14,
+      "symbol": "MovieDetailsViewController.movieModel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/View/MovieDetailsViewController.swift",
+      "line": 16,
+      "symbol": "MovieDetailsViewController.holderView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/View/MovieDetailsViewController.swift",
+      "line": 18,
+      "symbol": "MovieDetailsViewController.nameLbl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/View/MovieDetailsViewController.swift",
+      "line": 19,
+      "symbol": "MovieDetailsViewController.thumbnail",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/View/MovieDetailsViewController.swift",
+      "line": 20,
+      "symbol": "MovieDetailsViewController.priceLbl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/View/MovieDetailsViewController.swift",
+      "line": 21,
+      "symbol": "MovieDetailsViewController.hdPriceLbl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/View/MovieDetailsViewController.swift",
+      "line": 22,
+      "symbol": "MovieDetailsViewController.genreLbl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/View/MovieDetailsViewController.swift",
+      "line": 23,
+      "symbol": "MovieDetailsViewController.descriptionLbl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/View/MovieDetailsViewController.swift",
+      "line": 25,
+      "symbol": "MovieDetailsViewController.init(model:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/View/MovieDetailsViewController.swift",
+      "line": 30,
+      "symbol": "MovieDetailsViewController.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/View/MovieDetailsViewController.swift",
+      "line": 34,
+      "symbol": "MovieDetailsViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/View/MovieDetailsViewController.swift",
+      "line": 40,
+      "symbol": "MovieDetailsViewController.setupInterface()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/View/MovieDetailsViewController.swift",
+      "line": 117,
+      "symbol": "MovieDetailsViewController.setupValues()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/View/MoviesViewController.swift",
+      "line": 11,
+      "symbol": "MoviesViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/View/MoviesViewController.swift",
+      "line": 49,
+      "symbol": "MoviesViewController.preferredStatusBarStyle",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/View/MoviesViewController.swift",
+      "line": 55,
+      "symbol": "MoviesViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/View/MoviesViewController.swift",
+      "line": 61,
+      "symbol": "MoviesViewController.viewWillAppear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/View/MoviesViewController.swift",
+      "line": 80,
+      "symbol": "MoviesViewController.setupNavigationBar()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/View/MoviesViewController.swift",
+      "line": 87,
+      "symbol": "MoviesViewController.setupTable()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/View/MoviesViewController.swift",
+      "line": 105,
+      "symbol": "MoviesViewController.setupSearchController()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/View/MoviesViewController.swift",
+      "line": 122,
+      "symbol": "MoviesViewController.favoritesTapped()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/View/MoviesViewController.swift",
+      "line": 137,
+      "symbol": "MoviesViewController.setupKeyboardNotifications()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/View/MoviesViewController.swift",
+      "line": 144,
+      "symbol": "MoviesViewController.keyboardFrameWillChange(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/View/MoviesViewController.swift",
+      "line": 161,
+      "symbol": "MoviesViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/View/MoviesViewController.swift",
+      "line": 177,
+      "symbol": "MoviesViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/View/MoviesViewController.swift",
+      "line": 179,
+      "symbol": "MoviesViewController.numberOfSections(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/View/MoviesViewController.swift",
+      "line": 183,
+      "symbol": "MoviesViewController.tableView(_:numberOfRowsInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/View/MoviesViewController.swift",
+      "line": 187,
+      "symbol": "MoviesViewController.tableView(_:willDisplay:forRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/View/MoviesViewController.swift",
+      "line": 191,
+      "symbol": "MoviesViewController.tableView(_:cellForRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/View/MoviesViewController.swift",
+      "line": 203,
+      "symbol": "MoviesViewController.tableView(_:didSelectRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/View/MoviesViewController.swift",
+      "line": 211,
+      "symbol": "MoviesViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/View/MoviesViewController.swift",
+      "line": 213,
+      "symbol": "MoviesViewController.searchBarTextDidBeginEditing(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/View/MoviesViewController.swift",
+      "line": 217,
+      "symbol": "MoviesViewController.searchBarTextDidEndEditing(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/View/MoviesViewController.swift",
+      "line": 223,
+      "symbol": "MoviesViewController.updateSearchResults(for:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/View/Subviews/MovieCell.swift",
+      "line": 11,
+      "symbol": "MovieCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/View/Subviews/MovieCell.swift",
+      "line": 13,
+      "symbol": "MovieCell.favoriteAction",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/View/Subviews/MovieCell.swift",
+      "line": 17,
+      "symbol": "MovieCell.holderView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/View/Subviews/MovieCell.swift",
+      "line": 19,
+      "symbol": "MovieCell.thumbnail",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/View/Subviews/MovieCell.swift",
+      "line": 20,
+      "symbol": "MovieCell.nameLbl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/View/Subviews/MovieCell.swift",
+      "line": 21,
+      "symbol": "MovieCell.priceLbl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/View/Subviews/MovieCell.swift",
+      "line": 22,
+      "symbol": "MovieCell.genreLbl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/View/Subviews/MovieCell.swift",
+      "line": 23,
+      "symbol": "MovieCell.favoriteBtn",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/View/Subviews/MovieCell.swift",
+      "line": 25,
+      "symbol": "MovieCell.movieId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/View/Subviews/MovieCell.swift",
+      "line": 27,
+      "symbol": "MovieCell.init(style:reuseIdentifier:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/View/Subviews/MovieCell.swift",
+      "line": 32,
+      "symbol": "MovieCell.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/View/Subviews/MovieCell.swift",
+      "line": 36,
+      "symbol": "MovieCell.prepareForReuse()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/View/Subviews/MovieCell.swift",
+      "line": 41,
+      "symbol": "MovieCell.setupInterface()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/View/Subviews/MovieCell.swift",
+      "line": 108,
+      "symbol": "MovieCell.setMovieData(_:isSearch:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jc/Documents/KumuChallenge/KumuChallenge/View/Subviews/MovieCell.swift",
+      "line": 132,
+      "symbol": "MovieCell.favoriteTapped()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/jc/Documents/KumuChallenge"
+}

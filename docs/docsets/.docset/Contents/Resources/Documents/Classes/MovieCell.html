@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MovieCell Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/MovieCell" class="dashAnchor"></a>
+    <a title="MovieCell Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (22% documented)</p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        MovieCell Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AppDelegate.html">AppDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Configurator.html">Configurator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CoreDataWorker.html">CoreDataWorker</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FavoriteMovieInteractor.html">FavoriteMovieInteractor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ImageCache.html">ImageCache</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Movie.html">Movie</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Movie/CodingKeys.html">– CodingKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MovieCell.html">MovieCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MovieDetailsViewController.html">MovieDetailsViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MovieListInteractor.html">MovieListInteractor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MoviePresenter.html">MoviePresenter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MoviesViewController.html">MoviesViewController</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Global%20Variables.html">Global Variables</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Global%20Variables.html#/s:13KumuChallenge7bgColorSo7UIColorCvp">bgColor</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/RequestError.html">RequestError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RequestMethods.html">RequestMethods</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ResultError.html">ResultError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/WrapperType.html">WrapperType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/UIColor.html">UIColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/URLSession.html">URLSession</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/c:objc(cs)NSURLSessionDataTask">URLSessionDataTask</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/FavoriteMovieFetcher.html">FavoriteMovieFetcher</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/MovieFetcher.html">MovieFetcher</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Presenter.html">Presenter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/URLSessionDataTaskProtocol.html">URLSessionDataTaskProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/URLSessionProtocol.html">URLSessionProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/View.html">View</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/MovieList.html">MovieList</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MovieList/CodingKeys.html">– CodingKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MovieViewModel.html">MovieViewModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RequestUtils.html">RequestUtils</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RequestWorker.html">RequestWorker</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13KumuChallenge13ResultClosurea">ResultClosure</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13KumuChallenge11VoidClosurea">VoidClosure</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>MovieCell</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">MovieCell</span> <span class="p">:</span> <span class="kt">UITableViewCell</span></code></pre>
+
+                </div>
+              </div>
+            <p>Undocumented</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13KumuChallenge9MovieCellC14favoriteActionySi_SbtcSgvp"></a>
+                    <a name="//apple_ref/swift/Property/favoriteAction" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13KumuChallenge9MovieCellC14favoriteActionySi_SbtcSgvp">favoriteAction</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">favoriteAction</span><span class="p">:</span> <span class="p">((</span><span class="kt">Int</span><span class="p">,</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">())?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/IBOutlets"></a>
+                <a name="//apple_ref/swift/Section/IBOutlets" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/IBOutlets"></a>
+                  <h3 class="section-name"><span>IBOutlets</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13KumuChallenge9MovieCellC10holderView33_0DA642D39E30DB9A0217AB6F7DE1EE2DLLSo6UIViewCvp"></a>
+                    <a name="//apple_ref/swift/Property/holderView" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13KumuChallenge9MovieCellC10holderView33_0DA642D39E30DB9A0217AB6F7DE1EE2DLLSo6UIViewCvp">holderView</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="k">let</span> <span class="nv">holderView</span><span class="p">:</span> <span class="kt">UIView</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13KumuChallenge9MovieCellC9thumbnail33_0DA642D39E30DB9A0217AB6F7DE1EE2DLLSo11UIImageViewCvp"></a>
+                    <a name="//apple_ref/swift/Property/thumbnail" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13KumuChallenge9MovieCellC9thumbnail33_0DA642D39E30DB9A0217AB6F7DE1EE2DLLSo11UIImageViewCvp">thumbnail</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="k">let</span> <span class="nv">thumbnail</span><span class="p">:</span> <span class="kt">UIImageView</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13KumuChallenge9MovieCellC7nameLbl33_0DA642D39E30DB9A0217AB6F7DE1EE2DLLSo7UILabelCvp"></a>
+                    <a name="//apple_ref/swift/Property/nameLbl" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13KumuChallenge9MovieCellC7nameLbl33_0DA642D39E30DB9A0217AB6F7DE1EE2DLLSo7UILabelCvp">nameLbl</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="k">let</span> <span class="nv">nameLbl</span><span class="p">:</span> <span class="kt">UILabel</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13KumuChallenge9MovieCellC8priceLbl33_0DA642D39E30DB9A0217AB6F7DE1EE2DLLSo7UILabelCvp"></a>
+                    <a name="//apple_ref/swift/Property/priceLbl" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13KumuChallenge9MovieCellC8priceLbl33_0DA642D39E30DB9A0217AB6F7DE1EE2DLLSo7UILabelCvp">priceLbl</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="k">let</span> <span class="nv">priceLbl</span><span class="p">:</span> <span class="kt">UILabel</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13KumuChallenge9MovieCellC8genreLbl33_0DA642D39E30DB9A0217AB6F7DE1EE2DLLSo7UILabelCvp"></a>
+                    <a name="//apple_ref/swift/Property/genreLbl" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13KumuChallenge9MovieCellC8genreLbl33_0DA642D39E30DB9A0217AB6F7DE1EE2DLLSo7UILabelCvp">genreLbl</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="k">let</span> <span class="nv">genreLbl</span><span class="p">:</span> <span class="kt">UILabel</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13KumuChallenge9MovieCellC11favoriteBtn33_0DA642D39E30DB9A0217AB6F7DE1EE2DLLSo8UIButtonCvp"></a>
+                    <a name="//apple_ref/swift/Property/favoriteBtn" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13KumuChallenge9MovieCellC11favoriteBtn33_0DA642D39E30DB9A0217AB6F7DE1EE2DLLSo8UIButtonCvp">favoriteBtn</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="k">let</span> <span class="nv">favoriteBtn</span><span class="p">:</span> <span class="kt">UIButton</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13KumuChallenge9MovieCellC7movieId33_0DA642D39E30DB9A0217AB6F7DE1EE2DLLSivp"></a>
+                    <a name="//apple_ref/swift/Property/movieId" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13KumuChallenge9MovieCellC7movieId33_0DA642D39E30DB9A0217AB6F7DE1EE2DLLSivp">movieId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="k">var</span> <span class="nv">movieId</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@KumuChallenge@objc(cs)MovieCell(im)initWithStyle:reuseIdentifier:"></a>
+                    <a name="//apple_ref/swift/Method/init(style:reuseIdentifier:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@KumuChallenge@objc(cs)MovieCell(im)initWithStyle:reuseIdentifier:">init(style:<wbr>reuseIdentifier:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="nf">init</span><span class="p">(</span><span class="nv">style</span><span class="p">:</span> <span class="kt">UITableViewCell</span><span class="o">.</span><span class="kt">CellStyle</span><span class="p">,</span> <span class="nv">reuseIdentifier</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@KumuChallenge@objc(cs)MovieCell(im)initWithCoder:"></a>
+                    <a name="//apple_ref/swift/Method/init(coder:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@KumuChallenge@objc(cs)MovieCell(im)initWithCoder:">init(coder:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">required</span> <span class="nf">init</span><span class="p">?(</span><span class="nv">coder</span><span class="p">:</span> <span class="kt">NSCoder</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@KumuChallenge@objc(cs)MovieCell(im)prepareForReuse"></a>
+                    <a name="//apple_ref/swift/Method/prepareForReuse()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@KumuChallenge@objc(cs)MovieCell(im)prepareForReuse">prepareForReuse()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">prepareForReuse</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13KumuChallenge9MovieCellC14setupInterface33_0DA642D39E30DB9A0217AB6F7DE1EE2DLLyyF"></a>
+                    <a name="//apple_ref/swift/Method/setupInterface()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13KumuChallenge9MovieCellC14setupInterface33_0DA642D39E30DB9A0217AB6F7DE1EE2DLLyyF">setupInterface()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="kd">func</span> <span class="nf">setupInterface</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13KumuChallenge9MovieCellC03setC4Data_8isSearchyAA0C9ViewModelV_SbtF"></a>
+                    <a name="//apple_ref/swift/Method/setMovieData(_:isSearch:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13KumuChallenge9MovieCellC03setC4Data_8isSearchyAA0C9ViewModelV_SbtF">setMovieData(_:<wbr>isSearch:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setMovieData</span><span class="p">(</span><span class="n">_</span> <span class="nv">movie</span><span class="p">:</span> <span class="kt"><a href="../Structs/MovieViewModel.html">MovieViewModel</a></span><span class="p">,</span> <span class="nv">isSearch</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@KumuChallenge@objc(cs)MovieCell(im)favoriteTapped"></a>
+                    <a name="//apple_ref/swift/Method/favoriteTapped()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@KumuChallenge@objc(cs)MovieCell(im)favoriteTapped">favoriteTapped()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">func</span> <span class="nf">favoriteTapped</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2021 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2021-11-30)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
